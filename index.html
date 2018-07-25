@@ -6,27 +6,6 @@
 </head>
 <body>
 <div id="app"></div>
-<script src="node_modules/react/dist/react.js"></script>
-<script src="node_modules/react-dom/dist/react-dom.js"></script>
-<script>
-  const myTitle = function(){
-    return (
-      React.createElement('div', null,
-        React.createElement('h1', null, 'My second component')
-      )
-    )
-  }
-
-  var MyFirstComponent = function () {
-    return React.createElement('div', null,
-      React.createElement(myTitle)
-    );
-  };
-
-  ReactDOM.render(
-    React.createElement(MyFirstComponent),
-    document.getElementById("app")
-  );
-</script>
+<script src="public/bundle.js"></script>
 </body>
 </html>
